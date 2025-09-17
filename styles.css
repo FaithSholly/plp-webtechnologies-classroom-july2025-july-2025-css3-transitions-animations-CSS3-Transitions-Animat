@@ -1,0 +1,44 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: #f0f0f0;
+}
+
+/* Part 1: CSS transition (button hover effect) */
+#hoverBtn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background: #6200ea;
+  color: white;
+  border-radius: 6px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#hoverBtn:hover {
+  transform: scale(1.1);
+  background: #3700b3;
+}
+
+/* Box for JS-triggered animation */
+#animateBox {
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  background: #ff4081;
+  border-radius: 10px;
+}
+
+/* Part 3: Keyframe animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+/* Class added by JS */
+.bounce {
+  animation: bounce 1s ease;
+}
